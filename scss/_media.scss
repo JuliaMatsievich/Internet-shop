@@ -1,0 +1,299 @@
+@media (max-width: 1220px) {
+	.center {
+		padding-left: calc(50% - 400px);
+		padding-right: calc(50% - 400px);
+	}
+	.footer__logo {
+		display: none;
+	}
+	.cart {
+		margin-bottom: 64px;
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		gap: 32px;
+
+		&__content {
+			grid-column: span 8;
+		}
+
+		&__form {
+			display: flex;
+			flex-direction: column;
+			padding-bottom: 148px;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.center {
+		padding-left: calc(50% - 786px / 2);
+		padding-right: calc(50% - 786px / 2);
+	}
+
+	.for__item {
+		height: 268px;
+	}
+
+	.product-content {
+		column-gap: 29px;
+		row-gap: 39px;
+	}
+}
+.product-box {
+	margin-bottom: 64px;
+	&__catalog {
+		margin-bottom: 41px;
+	}
+}
+
+.cart-form {
+	&__input-fields {
+		padding-left: 27px;
+		width: 288px;
+	}
+	&__btn {
+		width: 289px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 833px) {
+	.center {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	.product {
+		width: 355px;
+	}
+	.product-content {
+		column-gap: 15px;
+	}
+}
+
+@media (max-width: 767px) {
+	.center {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.header {
+		&__search {
+			display: none;
+		}
+
+		&__menu {
+			display: none;
+		}
+
+		&__menu-mobile {
+			display: flex;
+			align-items: center;
+			gap: 32px;
+		}
+	}
+
+	.menu-mobile__svg path {
+		transition: fill 0.3s;
+	}
+	.menu-mobile__svg:hover path {
+		fill: #000;
+	}
+
+	.menu-mobile__svg rect {
+		transition: fill 0.3s;
+	}
+	.menu-mobile__svg:hover rect {
+		fill: #000;
+	}
+
+	.logo__img {
+		width: 99px;
+	}
+
+	.top {
+		margin-bottom: 32px;
+
+		&__header {
+			padding-top: 32px;
+			border-bottom: none;
+		}
+		&__content {
+			flex-direction: column;
+			gap: 16px;
+			align-items: center;
+			text-align: center;
+		}
+		&__title {
+			font-size: 48px;
+			line-height: 59px;
+		}
+		&__text {
+			font-size: 16px;
+			line-height: 32px;
+		}
+		&__link {
+			font-size: 14px;
+		}
+	}
+	.block__title {
+		font-size: 24px;
+		line-height: 29px;
+	}
+
+	.for {
+		margin-bottom: 32px;
+		&__content {
+			display: grid;
+			gap: 16px;
+			grid-template-columns: repeat(4, 1fr);
+		}
+		&__item {
+			height: 375px;
+			font-size: 28px;
+			line-height: 34px;
+			grid-column: 1 / -1;
+		}
+		&__item_big {
+			height: 243px;
+		}
+	}
+
+	.product {
+		&__heading {
+			font-size: 18px;
+			line-height: 22px;
+		}
+
+		&__price {
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+
+	.product-content {
+		justify-content: center;
+		gap: 32px;
+	}
+
+	.product-box {
+		margin-bottom: 36px;
+		&__catalog {
+			margin-bottom: 36px;
+		}
+	}
+
+	.link-box {
+		margin-bottom: 32px;
+	}
+
+	.footer {
+		&__info {
+			gap: 100px;
+			margin-bottom: 32px;
+		}
+		&__form {
+			align-items: center;
+		}
+	}
+
+	.breadcrumbs-sort {
+		gap: 16px;
+	}
+	.breadcrumbs__item {
+		font-size: 14px;
+	}
+	.sort-select {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.top__cart {
+		margin-bottom: 92px;
+	}
+
+	.cart__name-box {
+		display: none;
+	}
+
+	.cart-item {
+		&__img {
+			display: none;
+		}
+		&__title {
+			font-size: 18px;
+			line-height: 22px;
+		}
+		&__text {
+			font-size: 12px;
+			line-height: 15px;
+		}
+		&__price {
+			font-size: 12px;
+			line-height: 15px;
+		}
+		&__buttons {
+			gap: 14px;
+		}
+		&__btn {
+			font-size: 12px;
+			line-height: 15px;
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	.center {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.top__title {
+		font-size: 41px;
+		line-height: 54px;
+	}
+}
+
+@media (max-width: 633px) {
+	.footer {
+		&__content {
+			justify-content: center;
+		}
+	}
+	.cart {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 48px;
+	}
+
+	.cart__content {
+		grid-column: -1 / 1;
+	}
+	.cart-form {
+		grid-column: -1 / 1;
+		padding-bottom: 148px;
+
+		&__input-fields {
+			padding-left: 27px;
+			padding-right: 27px;
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.cart-item {
+		gap: 0px;
+
+		&__buttons {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__btn {
+			width: 290px;
+		}
+
+		&__input {
+			width: 71px;
+			height: 51px;
+		}
+	}
+}
